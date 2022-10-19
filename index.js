@@ -1,13 +1,26 @@
 const core = require('@actions/core')
-const github = require('@actions/github')
+var fs = require('fs') 
 
 try {
-    const include = core.getInput('include')
-    const exclude = core.getInput('exclude')
+    const file_path = core.getInput('file')
     const find = core.getInput('find')
     const replace = core.getInput('replace')
 } catch (error) {
     core.setFailed(error.message)
 }
 
-// Yet to fill remaining
+
+fs.readFile(file_path, 'utf8', function (err, data) {
+  if (err) {
+    core.setFailed(error.message)
+    return 0
+  }
+  var result = data.replace(find, replace);
+
+  fs.writeFile(file_path, result, 'utf8', function (err) {
+     if (err){
+         core.setFailed(error.message)
+         return 0
+     }
+  });
+});
