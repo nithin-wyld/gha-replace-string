@@ -1,0 +1,23 @@
+{
+  "name": "gha-replace-string",
+  "version": "1.0.0",
+  "description": "Finds and replaces all the strings for the mentioned files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nithin-wyld/gha-replace-string.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nithin-wyld/gha-replace-string/issues"
+  },
+  "homepage": "https://github.com/nithin-wyld/gha-replace-string#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.0"
+  }
+}
