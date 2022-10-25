@@ -1,6 +1,6 @@
 name: "Find and Replace"
 description: "Find and replace a string in your project files"
-author: "Nithin Vasishta" inspired by "Jacob Tomlinson"
+author: "Nithin Vasishta adapted from Jacob Tomlinson"
 inputs:
   file:
     description: "File path that needs to be modified"
